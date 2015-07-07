@@ -20,9 +20,11 @@ $(document).ready(function() {
       console.log($(window).scrollTop())
     if ($(window).scrollTop() > $scrollTop) {
       $('#nav_bar').addClass('navbar-fixed');
+      $('.content').css({'margin-top':'65px'});
     }
     if ($(window).scrollTop() < $scrollTop) {
       $('#nav_bar').removeClass('navbar-fixed');
+      $('.content').css({'margin-top':'0px'});
     }
   });
 });
