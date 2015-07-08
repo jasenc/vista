@@ -1,5 +1,6 @@
 $(document).ready(function() {
   var $scrollTop = $('#hero').height();
+  var $navBar = $('#nav_bar').height();
   var menuToggle = $('#js-centered-navigation-mobile-menu').unbind();
   $('#js-centered-navigation-menu').removeClass("show");
 
@@ -13,14 +14,10 @@ $(document).ready(function() {
   });
 
   $(window).scroll(function () {
-      //if you hard code, then use console
-      //.log to determine when you want the
-      //nav bar to stick.
-    console.log($scrollTop);
-      console.log($(window).scrollTop())
+
     if ($(window).scrollTop() > $scrollTop) {
       $('#nav_bar').addClass('navbar-fixed');
-      $('.content').css({'margin-top':'65px'});
+      $('.content').css({'margin-top': $navBar});
     }
     if ($(window).scrollTop() < $scrollTop) {
       $('#nav_bar').removeClass('navbar-fixed');
