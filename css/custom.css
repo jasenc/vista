@@ -1,0 +1,85 @@
+/*
+Error: Undefined mixin 'outer-container'.
+        on line 36 of ./css/custom.scss, in `outer-container'
+        from line 36 of ./css/custom.scss
+
+31:   background-repeat: no-repeat;
+32:   background-size: cover;
+33:   padding-bottom: 12em;
+34: 
+35:   .hero-inner {
+36:     @include outer-container;
+37:     @include clearfix;
+38:     color: $hero-color;
+39:     margin: auto;
+40:     padding: 3.5em;
+41:     text-align: center;
+
+Backtrace:
+./css/custom.scss:36:in `outer-container'
+./css/custom.scss:36
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:98:in `with_mixin'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `with_base'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `with_base'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `with_base'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/listen-2.10.1/lib/listen/listener.rb:305:in `call'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/listen-2.10.1/lib/listen/listener.rb:305:in `_process_changes'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/listen-2.10.1/lib/listen/listener.rb:269:in `block in _wait_for_changes'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/listen-2.10.1/lib/listen/listener.rb:252:in `loop'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/listen-2.10.1/lib/listen/listener.rb:252:in `_wait_for_changes'
+/Users/Jasen/.rvm/gems/ruby-2.2.0/gems/listen-2.10.1/lib/listen/listener.rb:341:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'outer-container'.\A         on line 36 of ./css/custom.scss, in `outer-container'\A         from line 36 of ./css/custom.scss\A \A 31:   background-repeat: no-repeat;\A 32:   background-size: cover;\A 33:   padding-bottom: 12em;\A 34: \A 35:   .hero-inner {\A 36:     @include outer-container;\A 37:     @include clearfix;\A 38:     color: $hero-color;\A 39:     margin: auto;\A 40:     padding: 3.5em;\A 41:     text-align: center;"; }
