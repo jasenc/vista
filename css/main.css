@@ -1010,7 +1010,8 @@ h5 {
       margin-right: 0; }
     .careers-content .employee h3,
     .careers-content .career-posting h3 {
-      font-weight: 600; }
+      font-weight: 600;
+      text-align: center; }
     .careers-content .employee h4,
     .careers-content .career-posting h4 {
       font-weight: 400;
@@ -1033,6 +1034,10 @@ h5 {
       .careers-content .employee .col-1-3:last-child,
       .careers-content .career-posting .col-1-3:last-child {
         margin-right: 0; }
+  .careers-content .career-posting,
+  .careers-content .paragraphs,
+  .careers-content .employee {
+    border-top: 1px solid #222; }
   .careers-content .employee-info img {
     border-radius: 50%;
     height: 130px;
@@ -1041,10 +1046,80 @@ h5 {
     margin: 0 auto;
     vertical-align: top; }
 
+#imageGallery {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  max-width: 780px;
+  text-align: center;
+  /** Start Coding Here **/ }
+  #imageGallery li {
+    display: inline-block;
+    padding: 8px;
+    background: white;
+    margin: 10px; }
+  #imageGallery li img {
+    display: block; }
+  #imageGallery a {
+    text-decoration: none; }
+
+.previous,
+article {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  margin: 0 0 0.75em;
+  padding: 1.5em; }
+  .previous::after,
+  article::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .previous h1,
+  article h1 {
+    text-align: center; }
+
 .navbar-fixed {
   top: 0;
   z-index: 100;
   position: fixed;
   width: 100%; }
+
+#container {
+  margin: 0; }
+
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center; }
+
+#overlay img {
+  margin-top: 5%; }
+
+#overlay p {
+  color: #ffffff; }
+
+h1,
+h2,
+h3 {
+  text-align: center; }
+
+#business,
+#previous,
+#contact,
+#careers {
+  padding-top: 4em; }
+
+#business ul {
+  list-style: circle;
+  margin-left: 1em; }
 
 /*# sourceMappingURL=main.css.map */

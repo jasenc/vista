@@ -305,6 +305,7 @@ h6 {
     min-height: 150px;
     h3 {
       font-weight: 600;
+      text-align: center;
     }
     h4 {
       font-weight: 400;
@@ -317,6 +318,12 @@ h6 {
       @include span-columns(4 of 12);
     }
   }
+  .career-posting,
+  .paragraphs,
+  .employee {
+    border-top: 1px solid #222;
+  }
+
   .employee-info img {
       border-radius: 50%;
       height: 130px;
@@ -324,5 +331,41 @@ h6 {
       display: block;
       margin: 0 auto;
       vertical-align: top;
+  }
+}
+
+
+#imageGallery {
+  	list-style:none;
+  	margin: 0 auto;
+  	padding: 0;
+  	display: block;
+  	max-width: 780px;
+  	text-align: center;
+
+  & li {
+  	display: inline-block;
+  	padding: 8px;
+  	background:white;
+  	margin:10px;
+  }
+  & li img {
+  	display: block;
+  }
+  a {
+  	text-decoration: none;
+  }
+  /** Start Coding Here **/
+}
+
+.previous,
+article {
+  @include outer-container();
+  background-color: lighten($base-border-color, 10%);
+  border: $base-border;
+  margin: 0 0 $small-spacing;
+  padding: $base-spacing;
+  h1 {
+    text-align: center;
   }
 }
