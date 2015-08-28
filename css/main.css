@@ -746,7 +746,7 @@ h5 {
   font-size: 1.1em; }
 
 .hero {
-  background: url("https://dl.dropboxusercontent.com/u/13604802/Nick/hero.jpg");
+  background: url('../img/hero.jpg');
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
